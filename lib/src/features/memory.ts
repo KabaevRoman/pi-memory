@@ -4,7 +4,7 @@ export default function (pi: ExtensionAPI): void {
   const state = acquire(pi,'memory'); if (!state) return;
   const {runtime:r,features} = state;
 
-    pi.on('before_agent_start',(_e,_ctx)=> features.has('prompts') ? undefined : {message:{customType:'claude-compat:memory',content:r.memory.format(),display:false}});
+    pi.on('before_agent_start',(_e,_ctx)=> features.has('prompts') ? undefined : {message:{customType:'code-compat:memory',content:r.memory.format(),display:false}});
     pi.on('tool_result',async (e,ctx)=> {
       if (!['read','Read'].includes(e.toolName)) return;
       const path = (e.input as any).path ?? (e.input as any).file_path;

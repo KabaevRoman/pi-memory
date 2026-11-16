@@ -1,6 +1,6 @@
 # @kabaevroman/pi-code-mem
 
-Independently installable pi extension: memory. Former package name: `pi-claude-memory`.
+Independently installable pi extension: memory.
 
 This extension depends on `@kabaevroman/pi-code-core@0.5.0`; it does not require any other extension.
 
