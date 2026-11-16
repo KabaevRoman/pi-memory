@@ -1,4 +1,4 @@
-# pi-code-project-memory
+# pi-code-mem
 
 Independently installable pi extension: memory. Former package name: `pi-claude-memory`.
 
