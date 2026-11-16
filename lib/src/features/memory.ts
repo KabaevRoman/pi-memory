@@ -1,5 +1,5 @@
 import type { ExtensionAPI } from '@earendil-works/pi-coding-agent';
-import { acquire } from 'pi-code-core';
+import { acquire } from '@kabaevroman/pi-code-core';
 export default function (pi: ExtensionAPI): void {
   const state = acquire(pi,'memory'); if (!state) return;
   const {runtime:r,features} = state;
